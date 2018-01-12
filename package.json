@@ -1,0 +1,23 @@
+{
+  "name": "ng-big-tables",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "aliv --quiet --p 8888"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericmdantas/ng-big-tables.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericmdantas/ng-big-tables/issues"
+  },
+  "homepage": "https://github.com/ericmdantas/ng-big-tables#readme",
+  "devDependencies": {
+    "aliv": "^1.9.1"
+  }
+}

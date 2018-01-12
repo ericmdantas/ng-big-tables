@@ -1,25 +1,38 @@
 <!doctype html>
 <html ng-app="app">
 	<head>
-		<title>ng-big-tables</title>		
+		<title>ng-big-tables</title>
 		<link rel="stylesheet" href="./index.css" />
 	</head>
-	
+
 	<body ng-controller="Ctrl as c">
 		<main>
-			<h1>!</h1>
-			
-			<table>
-				<thead>
-				</thead>
-				
-				<tbody>
-				</tbody>
-			</table>
+			<div class="container1">
+				<input type="number" ng-model="c.qtd" />
+				<button type="button" ng-click="c.push(c.qtd)">Push</button>
+				<button type="button" ng-click="c.ref(c.qtd)">Ref</button>
+
+				<table>
+					<thead>
+						<tr>
+							<th>info1</th>
+							<th>info2</th>
+							<th>info3</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr ng-repeat="item in c.items track by item._id">
+							<td ng-bind="item.info1"></td>
+							<td ng-bind="item.info2"></td>
+							<td ng-bind="item.info3"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</main>
-		
+
 		<script src="./angular.min.js"></script>
 		<script src="./index.js"></script>
 	</body>
 </html>
- 

@@ -1,3 +1,14 @@
-h1 {
-	color: red;
+body {
+	margin: 0;
+}
+
+main {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.container {
+	width: 30%;
+	float: left;
+	border: 1px solid red;
 }
